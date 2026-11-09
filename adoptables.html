@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widt, initial-scale=1-0">
+        <meta name="description" content="Meet our adoptables: Milo Jack Russell, Luna cat, Max & Bella bonded pair. All
+        vaccinated, sterilised and vet-checked in Alberton.">
+        <meta name="keywords" content="adoptables Alberton, adopt Milodog, adopt Luna cat, bonded pair dogs adoption">
+        <link rel="stylesheet" 
+    href="style.css">
+        <title> Adoptables | Paw & Hope Animals Rescue</title>
+    </head>
+</html>
+<header>
+    <h1> Paw & Hope Animals Rescue</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="adoptables.html">Adoptables</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<main>
+    <h2> Meet Our Furry Friends Looking For A Home</h2>
+    <p>All animals vaccinated, dewormed, sterilised and vet - checked. Adoption fee: R850 dogs, R650 cats.</p>
+     
+    <!--Tabs-->
+    <div class="tabs">
+        <button onclick="showTab ('tab1')">All Animals</button>
+        <button onclick="showTab ('tab2')">Dogs</button>
+        <button onclick="showTab('tab3')">Cats</button>
+    </div>
+    <div id="tab1"><p> Showing all adoptables below.</p></div>
+    <div id="tab2" style="display:none;"><p> Our dogs: Milo and Max & Bella.</p></div>
+    <div id="tab3" style="display:none;"><p> Our cats: Luna.</p></div>
+
+    <input type="text" id="searchBox" placeholder="Search Milo, Luna..." onkeup="filterAnimals()">
+    <select id="filterCat" onchange="filterAnimals()">
+        <option value="All">All</option>
+        <option value="Dog">Dogs</option>
+        <option value="Cat">Cats</option>
+        <option value="Pair">Bonded Pair</option>
+    </select>
+    <select id="sortPrice" onchange="filterAnimals()">
+        <option value="">Sort By</option>
+        <option value="low">Fee: Low to High</option>
+        <option value="high">Fee: High to Low</option>
+    </select>
+
+    <div id="animalList"></div>
+
+    <!--Lightbox-->
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightboxImg" src="" 
+        alt="Enlarged adoptable animal">
+    </div>
+
+    <p><a href="enquiry.html"> Enquire To Adopt</a> | <a href="contact.html">Contact Us</a></p>
+
+
+    <section>
+        <h3> Cannot adopt? You Can Still Help</h3>
+        <p> Sponser a kennel for R250 per month or foster for 2 weeks</p>
+        <a href="enquiry.html">Become a Sponsor</a>
+     </section>
+    </div><footer>&copy: 2026 Paws & Hope | NPO</footer><script
+src="script.js"></script></body> 
+
+    
+
+

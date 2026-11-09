@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widt, initial-scale=1.0">
+    <meta name="description" content="Enquire to adopt, volunteer, foster or sponsor at Paws & Hope. Get adoption cost R850
+    dogs, R650 cats and kennel sponsorship R250 per month">
+    <meta name="keywords" content="enquire adoption, volunteer animal shelter, foster dog Alberton, sponsor kennel R250">
+    <title> Enquiry | Paw & Hope Animals Rescue</title>
+    <link rel="stylesheet"
+    href="style.css">
+</head>
+<body>
+<header><div
+     class="container"><nav><h1>Paws & Hope Animal Rescue</h1></div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="adoptables.html">Adoptables</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    </nav>
+</div>
+    </header>
+    <h1>Enquire To Adopt, Volunteer, Foster or Sponsor</h1>
+    <form id="enquiryForm" action="https://formspree.io/f/your-id" method="POST" novalidate>
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required minlength="3" placeholder="Your name">
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+        <span class="error" id="emailError"></span>
+
+        <label for="phone">Phone (10 digits) *</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0673452176" required>
+        <span class="error" id="phoneError"></span>
+
+        <label> I am interested in: *</label><br>
+         <label><input type="radio" name="interest" value="Adopt" required> Adopt</label>
+         <label><input type="radio" name="interest" value="Volunteer"> Volunteer</label>
+         <label><input type="radio" name="interest" value="Foster"> Foster</label>
+         <label><input type="radio" name="interest" value="Sponsor / Donate"> Sponsor / Donate</label>
+         <span class="error" id="interestError"></span>
+
+         <label for="animal">Which animal?</label>
+         <select id="animal" name="animal">
+            <option value="Milo">Milo - R850 Dog</option>
+            <option value="Luna">Luna - R650 Cat</option>
+            <option value="Any">Any - Iam open</option>
+         </select>
+
+         <label for="date"> Preferred Visit Date *</label>
+         <input type="date" id="date" name="date" required>
+         <span class="error" id="dateError"></span>
+
+         <label for="message">Your Message (min 20 characters)</label>
+         <textarea id="message" name="message" rows="5" minlength="20" placeholder="Tell us about your home..."></textarea>
+         <span class="error" id="messageError"></span>
+
+         <label><input type="checkbox" id="agree" required> I agree to be contacted</label>
+         <span class="error" id="agreeError"></span>
+
+         <button type="submit" class="btn"> Submit Enquiry</button>
+    </form>
+    <div id="equiryResult"></div>
+     
+    
+</main>
+<script src="script.js"></script>
+</body>
+</html>
+</header>
+</div><footer>&copy: 2026 Paws & Hope | NPO</footer><script
+src="script.js"></script></body></html>
